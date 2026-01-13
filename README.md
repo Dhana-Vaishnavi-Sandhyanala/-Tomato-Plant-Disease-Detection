@@ -83,30 +83,60 @@ The application can also be deployed using Docker.
 
 ---
 
-## 🚀 How to Run Locally
+## 🚀 How to Run 
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/Dhana-Vaishnavi-Sandhyanala/-Tomato-Plant-Disease-Detection.git
-cd -Tomato-Plant-Disease-Detection
-2️⃣ Create virtual environment
-python -m venv venv
-venv\Scripts\activate
 
-3️⃣ Install dependencies
+Setup (Without Docker)
+
+Clone the repository:
+
+git clone https://github.com/dhanavaishnavisandhyanala/Tomato-Plant-Disease-Detection.git
+cd Tomato-Plant-Disease-Detection
+
+
+Install dependencies:
+
 pip install -r requirements.txt
 
-4️⃣ Run Streamlit app
+
+Run the Streamlit app:
+
 streamlit run app.py
 
-🐳 Docker Deployment
-1️⃣ Build Docker image
-docker build -t tomato-disease-app .
 
-2️⃣ Run container
-docker run -p 8501:8501 tomato-disease-app
+Open your browser at:
 
-3️⃣ Open browser
 http://localhost:8501
 
+Docker Deployment
+Build the Docker Image
+docker build -t tomato-disease-app .
 
+Run the App with Docker
+docker run -d -p 8501:8501 tomato-disease-app
+
+
+Open your browser and go to:
+
+http://localhost:8501
+
+Share the Docker Image
+
+The image is uploaded to Docker Hub and can be pulled using:
+
+docker pull dhanavaishnavisandhyanala/tomato-disease-app:latest
+
+
+Run the app directly from Docker Hub:
+
+docker run -d -p 8501:8501 dhanavaishnavisandhyanala/tomato-disease-app:latest
+
+
+Docker Hub link for easy access:
+https://hub.docker.com/r/dhanavaishnavisandhyanala/tomato-disease-app
+
+Notes
+
+Make sure port 8501 is free on your machine before running the container.
+
+For large datasets, Docker might take time to build and run.
