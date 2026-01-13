@@ -18,31 +18,7 @@ The application can also be deployed using Docker.
 ---
 
 ## 📂 Project Structure
-tomato-disease-detection/
-│
-├── data/
-│ ├── raw/ # Original Kaggle dataset (ignored in Git)
-│ ├── train/
-│ └── val/
-│
-├── src/
-│ ├── preprocess.py
-│ ├── model.py
-│ ├── train.py
-│ └── predict.py
-│
-├── model/
-│ └── tomato_model.h5
-│
-├── screenshorts/
-│ ├── training_with_cnn.jpg
-│ ├── testing_with_val1.png
-│ └── testing_with_val2.png
-│
-├── app.py
-├── requirements.txt
-├── README.md
-
+![alt text](image.png)
 
 ---
 
@@ -97,10 +73,10 @@ tomato-disease-detection/
 ## 🖼️ Screenshots
 
 ### Model Training
-![Training Logs](screenshorts/training_with_cnn.jpg)
+![Training Logs]![alt text](screenshorts/training_using_cnn.jpg)
 
 ### Streamlit Interface
-![Home](screenshorts/testing_with_val1.png)
+![Home]![alt text](screenshorts/testing_with_val1.jpg)
 
 ### Prediction Result
 ![Prediction](screenshorts/testing_with_val2.png)
